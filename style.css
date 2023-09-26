@@ -144,6 +144,7 @@ footer a {
 }
 
 @media(max-width:1108px) {
+
     .container {
         display: flex;
         width: 100%;
