@@ -10,6 +10,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -49,6 +50,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+    max-width: 530px;
 }
 
 .title {
@@ -59,7 +61,7 @@ header {
 
 .description {
     margin-block: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
     font-size: 18px;
 }
 
@@ -115,8 +117,86 @@ footer {
     text-align: center;
     color: #fff;
     font-size: 12px;
+    bottom: 5px;
 }
 
 footer a {
     color: greenyellow;
+}
+
+@media(max-width:1149px) {
+    body {
+        padding: 2rem;
+    }
+
+    .container {
+        padding-inline: 0;
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+}
+
+@media(max-width:1108px) {
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        width: 850px;
+    }
+
+    .info {
+        max-width: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .icons {
+        text-align: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:743px) {
+    .container {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 12px;
+        width: 200px;
+    }
 }
