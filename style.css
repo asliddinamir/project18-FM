@@ -16,7 +16,7 @@ body {
     font-family: var(--body-ff);
     background: url('./images/bg-desktop.svg') no-repeat center center/cover var(--violet);
     padding: 2.5rem 4rem;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 header {
@@ -79,4 +79,44 @@ header {
 .btn:hover {
     background-color: var(--soft-magenta);
     color: #fff;
+}
+
+.icons {
+    text-align: right;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.icons i {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 40px;
+    font-size: 18px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.icons i:hover {
+    border: 1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer a {
+    color: greenyellow;
 }
